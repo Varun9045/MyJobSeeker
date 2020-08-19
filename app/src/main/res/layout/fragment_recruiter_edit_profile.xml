@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".recruiter.recruiterfragments.RecruiterEditProfile">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/header"
+                android:background="@color/lightblue"
+                android:orientation="vertical"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="80dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/lightblue"
+                android:src="@drawable/recruiter"
+                android:id="@+id/update_recruiter_profileimg"
+                android:layout_centerHorizontal="true"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/capture_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_below="@id/header"
+                android:layout_alignRight="@id/update_recruiter_profileimg"
+                android:src="@drawable/ic_camera_white_24dp"
+                android:clickable="true"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:id="@+id/recruiter_profileName"
+                android:layout_below="@id/update_recruiter_profileimg"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:textSize="26sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/recruiter_profileName"
+                android:orientation="vertical">
+                <!--1st Cardview Personal details  -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="4dp"
+                    >
+                    <!--Cardview matchParent linear layout  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+                        <!--Header linear layout  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Personal details"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+                        <!--details 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter your Email"
+                                android:id="@+id/recruiter_email"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                />
+                        </LinearLayout>
+                        <!--details 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter your Phone no"
+                                android:id="@+id/recruiter_phoneNo"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                />
+
+                        </LinearLayout>
+                        <!--details 3 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="Address"
+                                android:id="@+id/recruiter_address"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:padding="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--2nd Cardview Personal details  -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="4dp"
+                    >
+                    <!--Cardview matchParent linear layout  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--Header linear layout  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Work Summary"
+                                android:padding="12dp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textSize="17sp"/>
+
+                        </LinearLayout>
+                        <!--details 1  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Profile title"
+                                android:id="@+id/recruiter_profileTitle"
+                                android:layout_gravity="center"
+                                android:padding="10dp"/>
+
+                        </LinearLayout>
+                        <!--details 2  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Company name"
+                                android:id="@+id/recruiter_companyName"
+                                android:layout_gravity="center"
+                                android:padding="10dp"/>
+
+                        </LinearLayout>
+                        <!--details 3  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Functional area"
+                                android:id="@+id/recruiter_functionalArea"
+                                android:layout_gravity="center"
+                                android:padding="10dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="Save Details"
+                    android:id="@+id/update_Recruiter_profile"
+                    android:padding="18dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/lightblue"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

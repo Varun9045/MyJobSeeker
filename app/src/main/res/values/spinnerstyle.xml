@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Custom_spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:entries">@array/role</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/spinnershape</item>
+
+    </style>
+</resources>

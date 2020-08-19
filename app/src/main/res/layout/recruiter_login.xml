@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".recruiter.RecruiterLogin">
+
+<ImageView
+    android:id="@+id/imageblue"
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="265dp"
+    android:background="@drawable/recruiter_vector" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/imageblue"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="100dp"
+    android:orientation="vertical"
+    android:layout_marginRight="30dp">
+    <com.hbb20.CountryCodePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_showFlag="true"
+        app:ccp_showNameCode="true"
+        app:ccp_showFullName="true"
+        android:padding="7dp"
+        android:backgroundTint="@color/lightblue"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:drawablePadding="18dp"
+        android:backgroundTint="@color/lightblue"
+        android:hint="Enter your mobile no"
+        android:id="@+id/signin_phone_no"
+        android:padding="18dp"
+        android:inputType="phone"
+        android:textColor="@color/lightblue"
+        android:textColorHint="@color/lightblue"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:onClick="Signin"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="@color/lightblue"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/dont_have_text"
+            android:textSize="18sp"
+            android:text="Don't have an account ?"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/dont_have_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:text="Sign Up"
+            android:onClick="SignUp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/lightblue"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

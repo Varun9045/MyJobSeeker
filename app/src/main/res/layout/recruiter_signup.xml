@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recruiter.RecruiterSignup">
+
+    <ImageView
+        android:id="@+id/imageblue"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp"
+        android:background="@drawable/recruiter_vector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageblue"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="18dp"
+            android:backgroundTint="@color/lightblue"
+            android:textColor="@color/lightblue"
+            android:textColorHint="@color/lightblue"
+            android:hint="Full Name"
+            android:id="@+id/fullname"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:drawablePadding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:backgroundTint="@color/lightblue"
+            android:inputType="textEmailAddress"
+            android:padding="18dp"
+            android:textColor="@color/lightblue"
+            android:textColorHint="@color/lightblue"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="18dp"
+            android:backgroundTint="@color/lightblue"
+            android:textColor="@color/lightblue"
+            android:textColorHint="@color/lightblue"
+            android:hint="Phone no "
+            android:inputType="phone"
+            android:id="@+id/mobileno"
+            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:drawablePadding="15dp"/>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:id="@+id/recruiterSignup"
+            android:onClick="callNextSignup"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:background="@color/lightblue"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/have_account_text"
+                android:textSize="18sp"
+                android:text="Already have account?"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/have_account_text"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text="Sign In"
+                android:onClick="signIn"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/lightblue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

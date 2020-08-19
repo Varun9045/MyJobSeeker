@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/student_nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@id/student_profile"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@id/uploadResume"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="Upload Resume" />
+        <item
+            android:id="@id/viewResume"
+            android:icon="@drawable/ic_add_jobs_black_24dp"
+            android:title="View Resume" />
+        <item
+            android:id="@id/listOfJobs"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:title="List Of Jobs" />
+        <item
+            android:id="@id/saveJobs"
+            android:icon="@drawable/ic_delete_forever_black_24dp"
+            android:title="Save Jobs" />
+        <item
+            android:id="@id/applyJobs"
+            android:icon="@drawable/ic_delete_forever_black_24dp"
+            android:title="Applied Jobs" />
+
+        <item
+            android:id="@+id/nav_student_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sign out" />
+    </group>
+</menu>

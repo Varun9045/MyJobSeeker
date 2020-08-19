@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/recruiter_nav_home">
+
+    <fragment
+        android:id="@+id/recruiter_nav_home"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_recruiter_home">
+        <action
+            android:id="@+id/action_nav_home_to_searchByTechnology"
+            app:destination="@id/searchByTechnology" />
+        <action
+            android:id="@+id/action_nav_home_to_addJobs"
+            app:destination="@id/addJobs" />
+        <action
+            android:id="@+id/action_nav_home_to_updateJobs"
+            app:destination="@id/myJobs" />
+        <action
+            android:id="@+id/action_nav_home_to_recruiterProfile"
+            app:destination="@id/recruiterProfile" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/searchByTechnology"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.SearchByTechnology"
+        android:label="Search by tech"
+        tools:layout="@layout/fragment_search_by_technology" />
+    <fragment
+        android:id="@+id/addJobs"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.AddJobs"
+        android:label="Add New Jobs"
+        tools:layout="@layout/fragment_add_jobs" />
+    <fragment
+        android:id="@+id/myJobs"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.myJobs"
+        android:label="My Jobs"
+        tools:layout="@layout/fragment_myjobs" />
+    <fragment
+        android:id="@+id/recruiterProfile"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_recruiter_profile" >
+        <action
+            android:id="@+id/action_recruiterProfile_to_recruiterEditProfile"
+            app:destination="@id/recruiterEditProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/recruiterEditProfile"
+        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterEditProfile"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_recruiter_edit_profile" />
+
+</navigation>

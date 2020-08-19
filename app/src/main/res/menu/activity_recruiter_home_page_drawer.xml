@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recruiter_nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@id/recruiterProfile"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@id/searchByTechnology"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="Search by tech" />
+        <item
+            android:id="@id/addJobs"
+            android:icon="@drawable/ic_add_jobs_black_24dp"
+            android:title="Add Job" />
+        <item
+            android:id="@id/myJobs"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:title="View My Jobs" />
+
+        <item
+            android:id="@+id/nav_recruiter_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sign out" />
+    </group>
+</menu>

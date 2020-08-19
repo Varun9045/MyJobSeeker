@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">JobSeeker</string>
+    <string name="discription_jobseeker">Full and Part time job seeker and job owners</string>
+    <string name="job">JOB</string>
+    <string name="seeker">SEEKER</string>
+    <string name="already_account">I ALREADY HAVE AN ACCOUNT</string>\
+    <string-array name="role">
+        <item>India (+91)</item>
+
+
+    </string-array>
+    <string-array name="jobId">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+
+    </string-array>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_jobpost">Job Post</string>
+
+
+    <string name="facebook_app_id">910678182735801</string>
+    <string name="fb_login_protocol_scheme">fb910678182735801</string>
+    <string name="title_activity_recruiter_home_page">RecruiterHomePage</string>
+    <string name="title_activity_student_home_page">StudentHomePage</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Splash screen -->
+    <!-- Discription of splash-->
+    <string name="job_seeker_disc">Job seeker is a platform. Which is designed for students and recruiters.</string>
+    <string name="job_post_disc">The recruiter can Add, Update and Delete jobs. </string>
+    <string name="job_search_disc">The Student can search and apply job and also upload your resume. </string>
+    <string name="job_notification_disc">The student and recruiter will receive the notification </string>
+    <!-- Button of splash-->
+    <string name="skip_btn">Skip</string>
+    <string name="Next_btn">Next</string>
+    <string name="get_start">Get Start</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashPage"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/splash_imageblue"
+        android:src="@drawable/blueimage"
+        android:scaleType="fitXY"
+        android:background="@color/navyblue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Seeker"
+            android:fontFamily="@font/doppio_one"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recruiter And Fresher"
+            android:id="@+id/splashtxt1"
+            android:fontFamily="@font/doppio_one"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App"
+            android:id="@+id/splashtxt2"
+            android:fontFamily="@font/doppio_one"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:id="@+id/splash_gif"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/splash_imageblue"
+            android:background="@drawable/job_splash"
+
+            />
+
+
+
+</RelativeLayout>

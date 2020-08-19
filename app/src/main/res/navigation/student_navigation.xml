@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/student_nav_home">
+
+    <fragment
+        android:id="@+id/student_nav_home"
+        android:name="com.example.jobseeker.student.studentfragment.StudentHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_students_home">
+        <action
+            android:id="@+id/action_student_nav_home_to_profile"
+            app:destination="@id/student_profile" />
+        <action
+            android:id="@+id/action_student_nav_home_to_listOfJobs"
+            app:destination="@id/listOfJobs" />
+        <action
+            android:id="@+id/action_student_nav_home_to_uploadResume"
+            app:destination="@id/uploadResume" />
+        <action
+            android:id="@+id/action_student_nav_home_to_viewResume"
+            app:destination="@id/viewResume" />
+        <action
+            android:id="@+id/action_student_nav_home_to_saveJobs"
+            app:destination="@id/saveJobs" />
+        <action
+            android:id="@+id/action_student_nav_home_to_applyJobs"
+            app:destination="@id/applyJobs" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_profile"
+        android:name="com.example.jobseeker.student.studentfragment.StudentProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_student_profile" >
+        <action
+            android:id="@+id/action_student_profile_to_studentEditProfile"
+            app:destination="@id/studentEditProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadResume"
+        android:name="com.example.jobseeker.student.studentfragment.UploadResume"
+        android:label="Upload Resume"
+        tools:layout="@layout/fragment_upload_resume" />
+    <fragment
+        android:id="@+id/viewResume"
+        android:name="com.example.jobseeker.student.studentfragment.ViewResume"
+        android:label="View Resume"
+        tools:layout="@layout/fragment_view_resume" />
+    <fragment
+        android:id="@+id/listOfJobs"
+        android:name="com.example.jobseeker.student.studentfragment.ListOfJobs"
+        android:label="List Of Jobs"
+        tools:layout="@layout/fragment_student_job_list" />
+    <fragment
+        android:id="@+id/saveJobs"
+        android:name="com.example.jobseeker.student.studentfragment.SaveJobs"
+        android:label="Save Jobs"
+        tools:layout="@layout/fragment_save_jobs" />
+    <fragment
+        android:id="@+id/applyJobs"
+        android:name="com.example.jobseeker.student.studentfragment.ApplyJobs"
+        android:label="Applied Jobs"
+        tools:layout="@layout/fragment_apply_jobs" />
+    <fragment
+        android:id="@+id/studentEditProfile"
+        android:name="com.example.jobseeker.student.studentfragment.StudentEditProfile"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_student_edit_profile" />
+
+</navigation>

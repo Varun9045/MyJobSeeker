@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".recruiter.recruiterfragments.AddJobs">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/lightblue"
+            android:gravity="center"
+            android:id="@+id/job_post_header"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your job post"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/job_post_header"
+            android:orientation="vertical">
+            <!--1st Cardview Basic details  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                >
+                <!--Cardview matchParent linear layout  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--Header linear layout  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Basic details"
+                            android:padding="12dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <!--details 1 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Job Role"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Full Stack Developer"
+                            android:layout_weight="1.5"
+                            android:id="@+id/job_role"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Experience"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Fresher"
+                            android:id="@+id/experience"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 5 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Min. Education"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Graduate"
+                            android:id="@+id/education"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 6 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Salary"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="20000"
+                            android:id="@+id/salary"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 8 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Job skills"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Java, Networking"
+                            android:layout_weight="1.5"
+                            android:id="@+id/job_skills"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 9 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Job Location"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Type location"
+                            android:layout_weight="1.5"
+                            android:id="@+id/job_location"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--2nd Cardview Personal details  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                >
+                <!--Cardview matchParent linear layout  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--Header linear layout  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Company Details"
+                            android:padding="12dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textSize="17sp"/>
+
+                    </LinearLayout>
+                    <!--details 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Recruiter Name"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:id="@+id/recruiter_name"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hiring Company"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Company Name"
+                            android:id="@+id/company_name"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <!--details 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="5dp"/>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="12345667"
+                            android:id="@+id/phone_no"
+                            android:inputType="number"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Add New Job"
+                android:layout_gravity="center"
+                android:id="@+id/addjob_btn"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/lightblue"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

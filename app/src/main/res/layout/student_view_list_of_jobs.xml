@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardMaxElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <!--Header linear layout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Role"
+                android:id="@+id/student_viewJobTitle"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+            <!--details 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:id="@+id/student_view_experience"
+                android:textSize="18sp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/exp_img"
+                android:padding="5dp"/>
+
+
+        <!--details 2 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Location"
+                android:id="@+id/student_view_job_location"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/location_img"
+                android:drawablePadding="20dp"
+                android:padding="5dp"/>
+
+
+
+        <!--details 3 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Min. Education"
+                android:textSize="18sp"
+                android:id="@+id/student_view_min_education"
+                android:drawableLeft="@drawable/study_img"
+                android:drawablePadding="20dp"
+                android:padding="5dp"/>
+
+        <!--details 4 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job skills"
+                android:id="@+id/student_view_jobSkills"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/jobskill_img"
+                android:drawablePadding="20dp"
+                android:padding="5dp"/>
+
+        <!--details 5 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/student_view_job_salary"
+                android:drawableLeft="@drawable/salery_img"
+                android:drawablePadding="20dp"
+                android:padding="5dp"
+                android:text="Salary"
+                android:textSize="18sp" />
+            <!--details 6 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_jobposted_company"
+                android:drawableLeft="@drawable/company_img"
+                android:drawablePadding="20dp"
+                android:padding="5dp"
+                android:text="Company Name"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:id="@+id/partLine"
+            android:background="@color/lightblue"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:padding="5dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/lightblue"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/lightblue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
