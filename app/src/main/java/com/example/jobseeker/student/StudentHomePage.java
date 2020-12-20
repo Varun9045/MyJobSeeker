@@ -131,7 +131,7 @@ public class StudentHomePage extends AppCompatActivity {
 
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.student_nav_home, R.id.student_profile, R.id.uploadResume, R.id.viewResume, R.id.listOfJobs, R.id.saveJobs,R.id.applyJobs, R.id.nav_student_logout)
+                R.id.student_nav_home, R.id.student_profile,R.id.applyJobs,R.id.myJobs2 , R.id.listOfJobs, R.id.nav_student_logout)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.std_nav_host_fragment);

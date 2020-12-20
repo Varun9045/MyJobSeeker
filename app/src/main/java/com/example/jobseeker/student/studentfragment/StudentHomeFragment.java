@@ -25,7 +25,7 @@ import java.util.HashMap;
 public class StudentHomeFragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
 SliderLayout sliderLayout;
 HashMap<String,Integer>hash_file_maps;
-CardView profile,uploadResume,viewResume,listofjobs,saveJobs,appliedJobs;
+CardView profile,listofjobs,myJobs,appliedJobs;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -42,10 +42,8 @@ CardView profile,uploadResume,viewResume,listofjobs,saveJobs,appliedJobs;
         hash_file_maps=new HashMap();
         slideImage();
         profile = view.findViewById(R.id.student_profile_home);
-        uploadResume = view.findViewById(R.id.student_uploadResume_home);
-        viewResume = view.findViewById(R.id.student_viewResume_home);
         listofjobs = view.findViewById(R.id.student_ListOfJobs_home);
-        saveJobs = view.findViewById(R.id.student_savejobs_home);
+        myJobs = view.findViewById(R.id.student_savejobs_home);
         appliedJobs = view.findViewById(R.id.student_applyjobs_home);
         //profile
         profile.setOnClickListener(new View.OnClickListener() {
@@ -55,22 +53,7 @@ CardView profile,uploadResume,viewResume,listofjobs,saveJobs,appliedJobs;
                 navController.navigate(R.id.action_student_nav_home_to_profile);
             }
         });
-        //uploadResume
-        uploadResume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_student_nav_home_to_uploadResume);
-            }
-        });
-        //view Resume
-        viewResume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_student_nav_home_to_viewResume);
-            }
-        });
+
         //list of jobs
         listofjobs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,11 +63,11 @@ CardView profile,uploadResume,viewResume,listofjobs,saveJobs,appliedJobs;
             }
         });
         //save jobs
-        saveJobs.setOnClickListener(new View.OnClickListener() {
+        myJobs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_student_nav_home_to_saveJobs);
+                navController.navigate(R.id.action_student_nav_home_to_myJobs2);
             }
         });
         //Applied jobs

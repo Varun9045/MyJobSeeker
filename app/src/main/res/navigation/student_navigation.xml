@@ -16,18 +16,13 @@
         <action
             android:id="@+id/action_student_nav_home_to_listOfJobs"
             app:destination="@id/listOfJobs" />
-        <action
-            android:id="@+id/action_student_nav_home_to_uploadResume"
-            app:destination="@id/uploadResume" />
-        <action
-            android:id="@+id/action_student_nav_home_to_viewResume"
-            app:destination="@id/viewResume" />
-        <action
-            android:id="@+id/action_student_nav_home_to_saveJobs"
-            app:destination="@id/saveJobs" />
+
         <action
             android:id="@+id/action_student_nav_home_to_applyJobs"
             app:destination="@id/applyJobs" />
+        <action
+            android:id="@+id/action_student_nav_home_to_myJobs2"
+            app:destination="@id/myJobs2" />
     </fragment>
     <fragment
         android:id="@+id/student_profile"
@@ -38,26 +33,12 @@
             android:id="@+id/action_student_profile_to_studentEditProfile"
             app:destination="@id/studentEditProfile" />
     </fragment>
-    <fragment
-        android:id="@+id/uploadResume"
-        android:name="com.example.jobseeker.student.studentfragment.UploadResume"
-        android:label="Upload Resume"
-        tools:layout="@layout/fragment_upload_resume" />
-    <fragment
-        android:id="@+id/viewResume"
-        android:name="com.example.jobseeker.student.studentfragment.ViewResume"
-        android:label="View Resume"
-        tools:layout="@layout/fragment_view_resume" />
+
     <fragment
         android:id="@+id/listOfJobs"
         android:name="com.example.jobseeker.student.studentfragment.ListOfJobs"
         android:label="List Of Jobs"
         tools:layout="@layout/fragment_student_job_list" />
-    <fragment
-        android:id="@+id/saveJobs"
-        android:name="com.example.jobseeker.student.studentfragment.SaveJobs"
-        android:label="Save Jobs"
-        tools:layout="@layout/fragment_save_jobs" />
     <fragment
         android:id="@+id/applyJobs"
         android:name="com.example.jobseeker.student.studentfragment.ApplyJobs"
@@ -68,5 +49,10 @@
         android:name="com.example.jobseeker.student.studentfragment.StudentEditProfile"
         android:label="Edit Profile"
         tools:layout="@layout/fragment_student_edit_profile" />
+    <fragment
+        android:id="@+id/myJobs2"
+        android:name="com.example.jobseeker.myJobs"
+        android:label="My Jobs"
+        tools:layout="@layout/fragment_my_jobs" />
 
 </navigation>

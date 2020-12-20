@@ -12,22 +12,16 @@
             android:id="@id/student_profile"
             android:icon="@drawable/ic_person_pin_black_24dp"
             android:title="Profile" />
-        <item
-            android:id="@id/uploadResume"
-            android:icon="@drawable/ic_find_in_page_black_24dp"
-            android:title="Upload Resume" />
-        <item
-            android:id="@id/viewResume"
-            android:icon="@drawable/ic_add_jobs_black_24dp"
-            android:title="View Resume" />
+
         <item
             android:id="@id/listOfJobs"
             android:icon="@drawable/ic_update_black_24dp"
             android:title="List Of Jobs" />
+
         <item
-            android:id="@id/saveJobs"
-            android:icon="@drawable/ic_delete_forever_black_24dp"
-            android:title="Save Jobs" />
+            android:id="@id/myJobs2"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:title="My Jobs" />
         <item
             android:id="@id/applyJobs"
             android:icon="@drawable/ic_delete_forever_black_24dp"

@@ -72,6 +72,7 @@ public class myJobs extends Fragment {
                 }
                 receuiterJobsAdapter = new ReceuiterJobsAdapter(getActivity(),list);
                 myRecycleView.setAdapter(receuiterJobsAdapter);
+
              }
 
 
