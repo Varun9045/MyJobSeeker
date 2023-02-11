@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageblue"
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="265dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/student_vector" />
 
 

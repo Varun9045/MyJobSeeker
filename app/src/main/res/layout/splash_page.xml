@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".SplashPage"
     >
+
     <ImageView
+        android:id="@+id/splash_imageblue"
         android:layout_width="wrap_content"
         android:layout_height="280dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/splash_imageblue"
-        android:src="@drawable/blueimage"
+        android:background="@color/navyblue"
         android:scaleType="fitXY"
-        android:background="@color/navyblue"/>
+        android:src="@drawable/blueimage" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,15 +52,16 @@
             android:textSize="22sp"
             android:textColor="#FFFFFF"/>
     </LinearLayout>
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="450dp"
-            android:layout_height="match_parent"
-            android:id="@+id/splash_gif"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/splash_imageblue"
-            android:background="@drawable/job_splash"
 
-            />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/splash_gif"
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/splash_imageblue"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/job_splash"
+
+        />
 
 
 

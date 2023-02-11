@@ -26,13 +26,14 @@
             android:searchIcon="@drawable/ic_search_blue_24dp"
             />
     </LinearLayout>
-       <androidx.recyclerview.widget.RecyclerView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:layout_below="@id/search_bar_header"
-           android:id="@+id/student_joblist_recycleView">
 
-       </androidx.recyclerview.widget.RecyclerView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/student_joblist_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_bar_header">
+
+        </androidx.recyclerview.widget.RecyclerView>
 
     </RelativeLayout>
 </FrameLayout>

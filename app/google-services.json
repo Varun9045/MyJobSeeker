@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "671525116172-jaqekpnneempeqlrckonigujdo5macs9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobseeker",
+            "certificate_hash": "385431ef0fc0e0f00169dcdee7f8b8136584b038"
+          }
+        },
+        {
           "client_id": "671525116172-23fvd6j4rog77566v6qglc0g9ee9e3s4.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jobseeker">
+    package="com.varunkumar123.jobseeker">
 
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -12,23 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.FullScreen">
-        <activity android:name=".recruiter.VerifyOtp" />
-        <activity android:name=".student.StudentLogin" />
-        <activity android:name=".IntroSlider" />
+        <activity android:name="com.varunkumar123.jobseeker.recruiter.VerifyOtp" />
+        <activity android:name="com.varunkumar123.jobseeker.student.StudentLogin" />
+        <activity android:name="com.varunkumar123.jobseeker.IntroSlider" />
         <activity
-            android:name=".recruiter.RecruiterHomePage"
+            android:name="com.varunkumar123.jobseeker.recruiter.RecruiterHomePage"
             android:label="@string/title_activity_recruiter_home_page"
             android:theme="@style/AppTheme.FullScreen.NoActionBar" />
         <activity
-            android:name=".student.StudentHomePage"
+            android:name="com.varunkumar123.jobseeker.student.StudentHomePage"
             android:label="@string/title_activity_student_home_page"
             android:theme="@style/AppTheme.FullScreen.NoActionBar" />
-        <activity android:name=".recruiter.OtpActivity" />
-        <activity android:name=".recruiter.RecruiterLogin" />
-        <activity android:name=".recruiter.RecruiterSignup" />
-        <activity android:name=".student.StudentSignup" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".SplashPage">
+        <activity android:name="com.varunkumar123.jobseeker.recruiter.OtpActivity" />
+        <activity android:name="com.varunkumar123.jobseeker.recruiter.RecruiterLogin" />
+        <activity android:name="com.varunkumar123.jobseeker.recruiter.RecruiterSignup" />
+        <activity android:name="com.varunkumar123.jobseeker.student.StudentSignup" />
+        <activity android:name="com.varunkumar123.jobseeker.ForgotPassword" />
+        <activity android:name="com.varunkumar123.jobseeker.SplashPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -21,25 +21,26 @@
                     android:background="@color/lightblue"
                     android:orientation="vertical"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
+             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/update_recruiter_profileimg"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="80dp"
-                android:id="@+id/update_recruiter_profileimg"
-                app:civ_border_width="2dp"
                 app:civ_border_color="@color/lightblue"
-                android:layout_centerHorizontal="true"/>
+                app:civ_border_width="2dp" />
+
             <TextView
+                android:id="@+id/student_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full Name"
-                android:textColor="@color/lightblue"
-                android:id="@+id/student_name"
                 android:layout_below="@id/update_recruiter_profileimg"
                 android:layout_centerHorizontal="true"
-                android:textStyle="bold"
                 android:padding="15dp"
-                android:textSize="26sp"/>
+                android:text="Full Name"
+                android:textColor="@color/lightblue"
+                android:textSize="26sp"
+                android:textStyle="bold" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

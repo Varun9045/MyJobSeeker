@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/recruiter_nav_home"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterHomeFragment"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.RecruiterHomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_recruiter_home">
         <action
@@ -26,22 +26,22 @@
     </fragment>
     <fragment
         android:id="@+id/searchByTechnology"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.SearchByTechnology"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.SearchByTechnology"
         android:label="Search by tech"
         tools:layout="@layout/fragment_search_by_technology" />
     <fragment
         android:id="@+id/addJobs"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.AddJobs"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.AddJobs"
         android:label="Add New Jobs"
         tools:layout="@layout/fragment_add_jobs" />
     <fragment
         android:id="@+id/myJobs"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.myJobs"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.myJobs"
         android:label="My Jobs"
         tools:layout="@layout/fragment_myjobs" />
     <fragment
         android:id="@+id/recruiterProfile"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterProfile"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.RecruiterProfile"
         android:label="Profile"
         tools:layout="@layout/fragment_recruiter_profile" >
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/recruiterEditProfile"
-        android:name="com.example.jobseeker.recruiter.recruiterfragments.RecruiterEditProfile"
+        android:name="com.varunkumar123.jobseeker.recruiter.recruiterfragments.RecruiterEditProfile"
         android:label="Edit Profile"
         tools:layout="@layout/fragment_recruiter_edit_profile" />
 
